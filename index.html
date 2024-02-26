@@ -3,20 +3,28 @@
     <head>
         <title>Javascrip Sample</title>
         <style>
+            
+                
             #divContainer {
                 text-align: center;
             }
             .redText {
                 color: red;
                 background-color: #7fb366;
+
+           .redText :hover {
+                    color: blue;
+                    background-color: #7fb366;
+            }
                 
             }
             div {
-                margin-bottom: 1rem;
+                margin-bottom: 1rem; 
                 font-size: large;
             }
-
+            
         </style>
+        
     </head>
     <body>
         <div id="divcontainer">
@@ -24,7 +32,16 @@
             <input type="text" placeholder="Username" class="redText">
             <input type="text" placeholder="Password" class="redText">
         </div>
-        <div><button>Login</button></div>
+        <div><button id="buttonLogin">Login</button></div>
         
     </body>
+    <script>
+        alert("Hello World");
+        console.log("Hello World.", 1 + 1);
+        let buttonLogin = document.querySelector("#buttonLogin")
+        buttonLogin.onclick = function () {
+            alert("Login Successful");
+        }
+        
+    </script>
 </html>
